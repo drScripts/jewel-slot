@@ -1,0 +1,69 @@
+body {
+  display: flex;
+  height: 100vh;
+  background: salmon;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.wrapper .right-bar {
+  flex: 2;
+}
+
+.wrapper .content {
+  flex: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+}
+
+.wrapper .left-bar {
+  flex: 1;
+}
+
+.wrapper .content .item-list .items {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+
+.wrapper .content .item-list .items .item-image {
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper .content .item-list .items .item-image.active {
+  border: 2px solid yellow;
+  background-color: yellow;
+}
+
+.wrapper .content .item-list img {
+  width: 75px;
+  height: 75px;
+}
+
+.button-respin {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: blue;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.button-respin i {
+  font-size: 70px;
+  color: white;
+}
